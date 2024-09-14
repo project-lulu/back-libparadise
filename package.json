@@ -1,6 +1,6 @@
 {
   "name": "@projectlulu/back-libparadise",
-  "version": "0.1.0-0",
+  "version": "0.1.0-1",
   "description": "Library for the persistent storage backend backend",
   "main": "src/main.js",
   "repository": "https://github.com/project-lulu/back-libparadise",
