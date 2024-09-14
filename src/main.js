@@ -2,8 +2,6 @@ const undici = require('undici');
 
 class Paradise {
 	constructor(config) {
-		this.super();
-
 		this.config = {
 			protocol: config.protocol || 'http',
 			host: config.host || 'localhost',
