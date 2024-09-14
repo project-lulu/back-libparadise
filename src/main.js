@@ -5,9 +5,11 @@ class Paradise {
 		this.config = {
 			protocol: config.protocol || 'http',
 			host: config.host || 'localhost',
-			port: config.port || '40000',
-			url: `${this.config.protocol}://${this.config.host}:${this.config.port}`
+			port: config.port || '40000'
 		}
+
+		this.config.url = `${this.config.protocol}://${this.config.host}:${this.config.port}`
+
 	}
 	async createUser() {
 		const res = await undici.request(`${this.config.url}/users/new`, {
